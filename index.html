@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Link to the favicon -->
+    <link rel="icon" type="image/png" href="countDownTimer.png">
+</head>
+
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Page heading -->
+        <h1>Multi Countdown Timer</h1>
+
+        <!-- Form to input timer details -->
+        <div class="timer-form">
+            <!-- Input for event name -->
+            <div class="input-group">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" placeholder="Enter event name">
+            </div>
+
+            <!-- Input for date and time -->
+            <div class="input-group">
+                <label for="datetime">Date and Time:</label>
+                <input type="datetime-local" id="datetime">
+            </div>
+
+            <!-- Button to add a new timer -->
+            <button id="add-timer" class="btn">
+                <i class="fas fa-plus"></i> Add Timer
+            </button>
+        </div>
+
+        <!-- Container for displaying all active timers -->
+        <div class="timers-container" id="timers-container"></div>
+    </div>
+
+    <!-- Alarm sound for timer expiration -->
+    <audio id="alarm-sound" src="https://cdnjs.cloudflare.com/ajax/libs/ion-sound/3.0.7/sounds/bell_ring.mp3"></audio>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
